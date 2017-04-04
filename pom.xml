@@ -11,7 +11,7 @@
 
 	<artifactId>aws-maven</artifactId>
 	<packaging>jar</packaging>
-	<version>1.0.0</version>
+	<version>1.0.1-SNAPSHOT</version>
 	<name>Amazon Web Services S3 Maven Wagon Support (Molindo Fork)</name>
 	<description>Standard Maven wagon support for s3:// urls</description>
 
