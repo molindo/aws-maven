@@ -542,7 +542,6 @@ public final class AbstractWagonTest {
         assertEquals(Integer.MAX_VALUE, this.wagon.getTimeout());
     }
 
-    @SuppressWarnings("unused")
     @Test
     public void simpleConstructor() {
         new StubWagon(true);
