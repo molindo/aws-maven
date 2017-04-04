@@ -1,13 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>org.springframework.build</groupId>
+	<parent>
+		<groupId>at.molindo</groupId>
+		<artifactId>molindo-oss-pom</artifactId>
+		<version>6</version>
+	</parent>
+
 	<artifactId>aws-maven</artifactId>
 	<packaging>jar</packaging>
-	<version>5.1.0.BUILD-SNAPSHOT</version>
-	<name>Amazon Web Services S3 Maven Wagon Support</name>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>Amazon Web Services S3 Maven Wagon Support (Molindo Fork)</name>
 	<description>Standard Maven wagon support for s3:// urls</description>
 
 	<properties>
@@ -112,15 +118,24 @@
 					<runOrder>random</runOrder>
 				</configuration>
 			</plugin>
-            <plugin>
-                <groupId>org.codehaus.mojo</groupId>
-                <artifactId>sonar-maven-plugin</artifactId>
-                <version>2.2</version>
-            </plugin>
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>sonar-maven-plugin</artifactId>
+				<version>2.2</version>
+			</plugin>
+			<plugin>
+				<groupId>com.mycila</groupId>
+				<artifactId>license-maven-plugin</artifactId>
+				<executions>
+					<execution>
+						<phase>none</phase>
+					</execution>
+				</executions>
+			</plugin>
 		</plugins>
 	</build>
 
-	<url>https://github.com/spring-projects/aws-maven</url>
+	<url>https://github.com/molindo/aws-maven</url>
 
 	<inceptionYear>2007</inceptionYear>
 
@@ -133,8 +148,9 @@
 	</licenses>
 
 	<scm>
-		<connection>scm:git:https://github.com/spring-projects/aws-maven.git</connection>
-		<url>https://github.com/spring-projects/aws-maven</url>
+		<connection>scm:git:git@github.com:molindo/aws-maven.git</connection>
+		<developerConnection>scm:git:git@github.com:molindo/aws-maven.git</developerConnection>
+		<url>git@github.com:molindo/aws-maven.git</url>
 	</scm>
 
 	<organization>
